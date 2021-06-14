@@ -1,2 +1,2 @@
-# site-portfolio-murilo
-Acesso ao site do meu portfólio 
+# portfolio-murilo
+Página descritiva sobre mim e meus projetos
