@@ -193,63 +193,7 @@ a:hover{
     visibility: visible;
     opacity: 1;
 }
-
-/* cards dos projetos */
-
-.container{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 3rem 0; /* p/ não ficar grudado com o header e o footer */
-}
-
-.card-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;   
-}
-
-.cardP1{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin: 3rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #63B8FF;
-    background-image: url('./img/logoSemFundo.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(0.5);
-    color: #1E1E2A;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-
-.cardP2{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin: 3rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #63B8FF;
-    background-image: url('./img/cadCadastros.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(0.5);
-    color: #1E1E2A;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-
+/* cards dos artigos */
 .card-article{
     width: 300px;
     height: 300px;
@@ -269,6 +213,7 @@ a:hover{
     transition: 0.5s ease-in-out;
 }
 
+
 .card-article2{
     width: 300px;
     height: 300px;
@@ -284,6 +229,43 @@ a:hover{
     background-repeat: no-repeat;
     filter: grayscale(0.5);
     color: #000000;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+/* cards dos artigos */
+
+.container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0; /* p/ não ficar grudado com o header e o footer */
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;   
+}
+
+/* cards dos efeitos do projeto 1 */
+.card{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #63B8FF;
+    background-image: url('./img/logoSemFundo.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #1E1E2A;
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
@@ -347,6 +329,89 @@ a:hover{
     visibility: visible;
     font-size: 14px;
 }
+/* efeito projeto 1 */
+
+/* cards dos efeitos do projeto 2 */
+.card2{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #63B8FF;
+    background-image: url('./img/paginaCadastrados.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: #1E1E2A;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.card-text2{
+    width: 40%;
+    letter-spacing: 1px;
+    color: rgb(109, 109, 109);
+}
+
+.card-wrapper2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.card-wrapper2::before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper2 h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper2 p{
+    font-size: 0;
+    visibility: visible; 
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.card2:hover{
+    filter: unset;
+}
+
+.card2:hover > .card-wrapper::before{
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+} 
+
+.card2:hover > .card-wrapper p{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+}
+/* efeito projeto 2 */
+
 
 /* rodapé */
 
